@@ -1,0 +1,8 @@
+<h1>Form de detalle</h1>
+
+<form novalidate [formGroup]="form" (submit)="submit()">
+    <p> Id del pedido:<input type="number" formControlName="idPed" min="0" step="1"/>
+    <p>id del producto<input type="number" formControlName="idProd" required/></p>
+    <p>Cantidad <input type="number" formControlName="Cantidad" mi="0"/></p>
+    <button type="submit">Añadir producto</button>
+</form>

@@ -1,0 +1,12 @@
+<h1>FForm de Pedido</h1>
+
+<form novalidate [formGroup]="form" (submit)="submit()">
+    <p> Id prducto:<input type="number" formControlName="idPed"readonly/></p>
+    <p>id Cliente<input type="number" formControlName="idCliente" /></p>
+    <p>Nombre del cliente: <input type="text" formControlName="nombreCliente" /></p>
+    <p>Forma de Pago: <input type="text" formControlName="fPago" /></p>
+    <p>Direccion de entrega: <input type="text" formControlName="direccion" /></p>
+    <button type="submit">Añadir pedido</button>
+</form>
+<button type="button" (click)="aProduc()">Añadir producto</button>
+<router-outlet ></router-outlet>
